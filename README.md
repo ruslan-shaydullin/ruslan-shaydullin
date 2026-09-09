@@ -29,7 +29,13 @@ Also contributed [test cleanup to the OpenTelemetry Collector](https://github.co
 
 **[Crewboss](https://github.com/ruslan-shaydullin/crewboss)** — an experimental framework for coordinating coding agents with role-based permissions, task orchestration, a web dashboard, and review/CI gates. The repository contains the reference runtime, tests, and architecture notes.
 
+**[Contribution Notebook](https://github.com/ruslan-shaydullin/contribution-notebook)** — a local Python CLI for collecting public GitHub activity, writing Markdown reports, and keeping contribution plans alongside evidence. Includes an offline demo, tests, and CI; GitHub access is read-only.
+
 **Quarter** — a personal finance app in development. Building the native iOS client with SwiftUI and SwiftData, a transactional outbox for sync retries, and budget indicators that compare spending with elapsed time. Source is currently private.
+
+## Reproducible investigations
+
+**[Ops reproductions](https://github.com/ruslan-shaydullin/ops-reproductions)** contains runnable examples from my community troubleshooting: kube-bench authorization checks with process fixtures, and Data Prepper metrics checked against an official container. Each example documents its pinned versions, expected results, and verification limits. [Investigation notes →](https://github.com/ruslan-shaydullin/ruslan-shaydullin/blob/main/CONTRIBUTIONS.md#reproducible-investigations)
 
 ## Toolbox
 

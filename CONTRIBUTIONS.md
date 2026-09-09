@@ -54,6 +54,17 @@ Removed temporary HTTP-client overrides from a Simple Prometheus receiver test f
 
 [Read the changes](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49676/files)
 
+## Reproducible investigations
+
+These examples accompany my community answers. They document local investigations,
+with runnable checks and explicit limits; publication is not evidence that the
+asker's deployment was fixed or that an answer was accepted.
+
+| Investigation | Reproduce it | Community answer |
+| :--- | :--- | :--- |
+| **kube-bench authorization checks** — run the upstream evaluator against process fixtures to inspect how flag-based checks handle file-based authorization configuration. This does not assess a live cluster. | [Source, fixtures, and expected results](https://github.com/ruslan-shaydullin/ops-reproductions/tree/main/kube-bench-2141) | [kube-bench #2141](https://github.com/aquasecurity/kube-bench/discussions/2141#discussioncomment-18366686) |
+| **Data Prepper metrics endpoints** — send three events through an HTTP → grok → stdout pipeline in a pinned official container, then compare metric series and pipeline counters exposed by two endpoint paths. | [Container example and expected results](https://github.com/ruslan-shaydullin/ops-reproductions/tree/main/data-prepper-7109) | [Data Prepper #7109](https://github.com/opensearch-project/data-prepper/discussions/7109#discussioncomment-18366691) |
+
 ## Work in review
 
 These pull requests were **open**, not merged, at the status check above:
